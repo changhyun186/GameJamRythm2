@@ -76,7 +76,7 @@ public class PlayerCircle : MonoBehaviour
 
         yield return new WaitForSeconds(keyDownableSec);
         isKeyDownAble = false;
-        print("die");
+        Die();
 
     }
     public void Die()

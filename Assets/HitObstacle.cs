@@ -28,6 +28,8 @@ public abstract class HitObstacle : MonoBehaviour
         col.enabled = isCur;
         if(isCur)
         GameManager.Instance.curHitObstacle = this;
+        if (isCur)
+            GetComponent<Renderer>().material.color = Color.white;
     }
 
     public virtual void Break()
