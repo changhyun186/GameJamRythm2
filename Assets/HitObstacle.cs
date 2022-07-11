@@ -8,6 +8,7 @@ public abstract class HitObstacle : MonoBehaviour
     public HitObstacle nextObstacle;
     public Rigidbody rb;
     public Collider col;
+    public bool isAlreadyHit;
 
     public GameObject braekPrefab;
     public ParticleSystem breakParticle;
@@ -35,6 +36,10 @@ public abstract class HitObstacle : MonoBehaviour
         nextObstacle.SetIsCurTarget(true);
         if(breakParticle != null)
         Instantiate(breakParticle, transform.position, Quaternion.identity);
+    }
+    public void AlreadyKeyInput()
+    {
+
     }
 
     public abstract void OnLeftKeyDown();

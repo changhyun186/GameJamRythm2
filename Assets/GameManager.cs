@@ -15,25 +15,45 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         if(Input.GetKeyDown(KeyCode.D))
         {
+            if(player.isEalryHit)
+            {
+                player.EalryKeyType = KeyType.D;
+                return;
+            }
             if (!player.isKeyDownAble)
             {
                 player.Die();
                 return;
             }
-            curHitObstacle.OnLeftKeyDown();
-            player.StopCor();
-            curHitObstacle.Break();
+            OnKeyDDown();
         }
         else if (Input.GetKeyDown(KeyCode.K))
         {
+            if (player.isEalryHit)
+            {
+                player.EalryKeyType = KeyType.K;
+                return;
+            }
             if (!player.isKeyDownAble)
             {
                 player.Die();
                 return;
             }
-            curHitObstacle.OnRightKeyDown();
-            player.StopCor();
-            curHitObstacle.Break();
+            OnKeyKDown();
         }
+    }
+
+    public void OnKeyKDown()
+    {
+        curHitObstacle.OnRightKeyDown();
+        player.StopCor();
+        curHitObstacle.Break();
+    }
+
+    public void OnKeyDDown()
+    {
+        curHitObstacle.OnLeftKeyDown();
+        player.StopCor();
+        curHitObstacle.Break();
     }
 }

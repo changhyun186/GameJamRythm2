@@ -5,7 +5,6 @@ using UnityEngine;
 public class MirrorObstacle : HitObstacle
 {
 
-
     public override void Break()
     {
         base.Break();
