@@ -10,7 +10,7 @@ public abstract class HitObstacle : MonoBehaviour
     public Collider col;
     public bool isAlreadyHit;
 
-    public GameObject braekPrefab;
+    public GameObject breakPrefab;
     public ParticleSystem breakParticle;
 
     public string Type;
@@ -37,7 +37,9 @@ public abstract class HitObstacle : MonoBehaviour
         SetIsCurTarget(false);
         nextObstacle.SetIsCurTarget(true);
         if(breakParticle != null)
-        Instantiate(breakParticle, transform.position, Quaternion.identity);
+            Instantiate(breakParticle, transform.position, Quaternion.identity);
+        if(breakPrefab!=null)
+            Instantiate(breakPrefab, transform.position, Quaternion.identity);
     }
     public void AlreadyKeyInput()
     {
