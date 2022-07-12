@@ -32,13 +32,13 @@ public class MapEditor : MonoBehaviour
 
         var instanceL = Instantiate(portL, transform);
         instance.transform.position = cur.transform.position;
-        ((RingObstacle)cur).leftOut = portL.transform;
+        ((RingObstacle)cur).leftOut = instanceL.transform;
         cur = instance;
 
 
         var instanceR = Instantiate(portR, transform);
         instance.transform.position = cur.transform.position;
-        ((RingObstacle)cur).rightOut = portR.transform;
+        ((RingObstacle)cur).rightOut = instanceR.transform;
         cur = instance;
     }
 
