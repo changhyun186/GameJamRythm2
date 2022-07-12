@@ -32,6 +32,7 @@ public abstract class HitObstacle : MonoBehaviour
         {
             GameManager.Instance.curHitObstacle = this;
             GetComponentInChildren<Renderer>().material.color = Color.white;
+            if(nextObstacle!=null)
             nextObstacle.GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0.3f);
 
         }
@@ -44,7 +45,7 @@ public abstract class HitObstacle : MonoBehaviour
 
     public virtual void Break()
     {
-        AudioManager.Instance.Play(tileAudio.clip,MixerChannel.Tile);
+        tileAudio.Play();
         SetIsCurTarget(false);
         nextObstacle.SetIsCurTarget(true);
         if(breakParticle != null)

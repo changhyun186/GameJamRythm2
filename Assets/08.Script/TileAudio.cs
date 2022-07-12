@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class TileAudio : MonoBehaviour
 {
-    public AudioClip clip;
+    public AudioClip[] clip;
     public void Play()
     {
-        AudioManager.Instance.Play(clip, MixerChannel.Tile);
+        foreach(var clipItem in clip)
+        {
+            AudioManager.Instance.Play(clipItem, MixerChannel.Tile);
+        }
     }
 }

@@ -15,8 +15,8 @@ public class MapEditor : MonoBehaviour
     public HitObstacle cur;
     public void InstantiateMirror()
     {
-        //var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(mirrorObstacle,transform);
-        var instance = Instantiate(mirrorObstacle, transform);
+        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(mirrorObstacle,transform);
+        //var instance = Instantiate(mirrorObstacle, transform);
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
