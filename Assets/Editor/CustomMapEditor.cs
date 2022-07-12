@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(HitObstacle),true), CanEditMultipleObjects]
+[CustomEditor(typeof(HitObstacle), true), CanEditMultipleObjects]
 public class CustomMapEditor : Editor
 {
     HitObstacle selected;
