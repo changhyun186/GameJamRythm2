@@ -31,15 +31,13 @@ public class MapEditor : MonoBehaviour
         Selection.activeObject = cur;
 
         var instanceL = Instantiate(portL, transform);
-        instance.transform.position = cur.transform.position;
+        instanceL.transform.position = cur.transform.position;
         ((RingObstacle)cur).leftOut = instanceL.transform;
-        cur = instance;
 
 
         var instanceR = Instantiate(portR, transform);
-        instance.transform.position = cur.transform.position;
+        instanceR.transform.position = cur.transform.position;
         ((RingObstacle)cur).rightOut = instanceR.transform;
-        cur = instance;
     }
 
     public void InstanatiateTwoDir()
