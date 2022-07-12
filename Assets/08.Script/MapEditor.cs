@@ -32,12 +32,12 @@ public class MapEditor : MonoBehaviour
 
         var instanceL = Instantiate(portL, transform);
         instanceL.transform.position = cur.transform.position;
-        ((RingObstacle)cur).leftOut = instanceL.transform;
+        ((RingObstacle)cur).leftOut = instanceL.transform.Find("Point");
 
 
         var instanceR = Instantiate(portR, transform);
         instanceR.transform.position = cur.transform.position;
-        ((RingObstacle)cur).rightOut = instanceR.transform;
+        ((RingObstacle)cur).rightOut = instanceR.transform.Find("Point");
     }
 
     public void InstanatiateTwoDir()
