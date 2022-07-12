@@ -655,17 +655,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &1258651289 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2316720476362485433, guid: db3374b95512f4d468f7948152bdec33, type: 3}
-  m_PrefabInstance: {fileID: 1883216851285195436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf177c54afa84ab43856f849a525559e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1363722658 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1883216852070103822, guid: db3374b95512f4d468f7948152bdec33, type: 3}
@@ -891,10 +880,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1883216852050472932, guid: db3374b95512f4d468f7948152bdec33, type: 3}
-      propertyPath: cur
+    - target: {fileID: 165083578829266843, guid: db3374b95512f4d468f7948152bdec33, type: 3}
+      propertyPath: clip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 165083578829266843, guid: db3374b95512f4d468f7948152bdec33, type: 3}
+      propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 1258651289}
+      objectReference: {fileID: 8300000, guid: 98a125eda2246964392110a365caed7e, type: 3}
     - target: {fileID: 1883216852050472938, guid: db3374b95512f4d468f7948152bdec33, type: 3}
       propertyPath: m_Name
       value: MapEditor

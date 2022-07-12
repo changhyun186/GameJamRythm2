@@ -71,7 +71,7 @@ MonoBehaviour:
   portal: {fileID: 1813306084788611271, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
   portL: {fileID: 5011246909121428199, guid: 453d2b96a857e124caa4588494588f86, type: 3}
   portR: {fileID: 6934445198712917368, guid: 94e26d699f0754d47b4b92657c790f98, type: 3}
-  cur: {fileID: 5637889228553935636}
+  cur: {fileID: 2316720476362485433}
 --- !u!1001 &1883216850850461084
 PrefabInstance:
   m_ObjectHideFlags: 0
