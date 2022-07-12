@@ -5,15 +5,58 @@ using UnityEditor;
 
 public class MapEditor : MonoBehaviour
 {
-    public HitObstacle prefab;
+    public MirrorObstacle mirrorObstacle;
+    public PipeObstacle arch;
+    public PipeObstacle twoDir;
+    public SpinObstacle spinner;
+    public RingObstacle portal;
+    public GameObject portL,portR;
 
     public HitObstacle cur;
-    public void InstantiateNew()
+    public void InstantiateMirror()
     {
-        var instance = Instantiate(prefab, transform);
+        var instance = Instantiate(mirrorObstacle, transform);
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
+        Selection.activeObject = cur;
         
+    }
+    public void InstantiatePortal()
+    {
+        var instance = Instantiate(portal, transform);
+        instance.transform.position = cur.transform.position;
+        cur.nextObstacle = instance;
+        cur = instance;
+        Selection.activeObject = cur;
+
+        var instanceL = Instantiate(portL, transform);
+        instance.transform.position = cur.transform.position;
+        cur.nextObstacle = instance;
+        cur = instance;
+
+
+        var instanceR = Instantiate(portR, transform);
+        instance.transform.position = cur.transform.position;
+        cur.nextObstacle = instance;
+        cur = instance;
+    }
+
+    public void InstanatiateTwoDir()
+    {
+        var instance = Instantiate(twoDir, transform);
+        instance.transform.position = cur.transform.position;
+        cur.nextObstacle = instance;
+        cur = instance;
+        Selection.activeObject = cur;
+    }
+
+    public void InstantiateSpinner()
+    {
+        var instance = Instantiate(spinner, transform);
+        instance.transform.position = cur.transform.position;
+        cur.nextObstacle = instance;
+        cur = instance;
+        Selection.activeObject = cur;
     }
 }
