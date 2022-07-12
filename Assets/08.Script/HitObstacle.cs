@@ -32,6 +32,7 @@ public abstract class HitObstacle : MonoBehaviour
         {
             GameManager.Instance.curHitObstacle = this;
             GetComponentInChildren<Renderer>().material.color = Color.white;
+            if(nextObstacle!=null)
             nextObstacle.GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0.3f);
 
         }
