@@ -45,7 +45,7 @@ public abstract class HitObstacle : MonoBehaviour
 
     public virtual void Break()
     {
-        AudioManager.Instance.Play(tileAudio.clip,MixerChannel.Tile);
+        tileAudio.Play();
         SetIsCurTarget(false);
         nextObstacle.SetIsCurTarget(true);
         if(breakParticle != null)
