@@ -31,12 +31,12 @@ public class MapEditor : MonoBehaviour
         cur = instance;
         Selection.activeObject = cur;
 
-        var instanceL = (HitObstacle)PrefabUtility.InstantiatePrefab(portL, transform);
+        var instanceL = (GameObject)PrefabUtility.InstantiatePrefab(portL, transform);
         instanceL.transform.position = cur.transform.position;
         ((RingObstacle)cur).leftOut = instanceL.transform.Find("Point");
 
 
-        var instanceR = (HitObstacle)PrefabUtility.InstantiatePrefab(portR, transform);
+        var instanceR = (GameObject)PrefabUtility.InstantiatePrefab(portR, transform);
         instanceR.transform.position = cur.transform.position;
         ((RingObstacle)cur).rightOut = instanceR.transform.Find("Point");
     }
