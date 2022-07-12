@@ -26,10 +26,18 @@ public abstract class HitObstacle : MonoBehaviour
     {
         isCurTarget = isCur;
         col.enabled = isCur;
-        if(isCur)
-        GameManager.Instance.curHitObstacle = this;
         if (isCur)
+        {
+            GameManager.Instance.curHitObstacle = this;
             GetComponentInChildren<Renderer>().material.color = Color.white;
+            nextObstacle.GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0.3f);
+
+        }
+        else
+        {
+            GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0f);
+        }
+
     }
 
     public virtual void Break()

@@ -4591,6 +4591,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2074139210710405146, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.0629416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074139210710405146, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0629416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074139210710405146, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.0629416
+      objectReference: {fileID: 0}
     - target: {fileID: 5140100611205562850, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
       propertyPath: m_Name
       value: Arch
