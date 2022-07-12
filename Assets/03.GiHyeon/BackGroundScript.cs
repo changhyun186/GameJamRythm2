@@ -24,14 +24,19 @@ public class BackGroundScript : MonoBehaviour
     [SerializeField] private float tarAngle;
     float timeCounter = 0;
 
+    Vector3 scale;
+
     // Start is called before the first frame update
     void Start()
     {
         obj = GetComponent<Image>();
+        curAngle = transform.localRotation.eulerAngles.z;
+        //Debug.Log($"{transform.rotation.eulerAngles.z}");
+        scale = transform.localScale;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Pumping();
         Switcher();
@@ -41,16 +46,16 @@ public class BackGroundScript : MonoBehaviour
     void Pumping()
     {
         timer += Time.deltaTime;
-        if (timer >= 0.008f)
+        if (timer >= 0.0001f)
         {
-            obj.transform.localScale += new Vector3(0.01f, 0.01f, 0.01f) * i;
+            obj.transform.localScale += new Vector3(0.005f, 0.005f, 0.005f) * i * scale.x;
             timer = 0;
         }
-        if(obj.transform.localScale.x > 1.15f)
+        if(obj.transform.localScale.x > scale.x * 1.15f)
         {
             i = -1;
         }
-        if (obj.transform.localScale.x < 0.9f)
+        if (obj.transform.localScale.x < scale.x * 0.9f)
         {
             i = 1;
             count++;
@@ -62,13 +67,13 @@ public class BackGroundScript : MonoBehaviour
         switch ((int)rotateType)
         {
             case 0:
-                Rotate(4, 90);
+                Rotate(2, 90);
                 break;
             case 1:
-                Rotate(4, -90);
+                Rotate(2, -90);
                 break;
             case 2:
-                Rotate(2, 1);
+                Rotate(1, 1);
                 break;
         }
     }
@@ -77,12 +82,12 @@ public class BackGroundScript : MonoBehaviour
     {
         if (count == _count)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            Debug.Log("ÃÊ±âÈ­µÊ");
+           //transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            
             isrotation = true;
-            curAngle = 0;
+            curAngle += 90; //0
             timeCounter = 0;
-            tarAngle = dir;
+            tarAngle = curAngle + dir; //dir
             count = 0;
         }
     }
@@ -91,14 +96,14 @@ public class BackGroundScript : MonoBehaviour
     {
         if(isrotation)
         {
-            Debug.Log("½ÇÇàµÊ");
-            transform.rotation = Quaternion.Slerp(Quaternion.Euler(new Vector3(0, 0, curAngle)), Quaternion.Euler(new Vector3(0, 0, tarAngle)), timeCounter);
+            transform.localRotation = Quaternion.Slerp(Quaternion.Euler(new Vector3(0, 0, curAngle)), Quaternion.Euler(new Vector3(0, 0, tarAngle)), timeCounter);
             timeCounter += Time.deltaTime;
         }
-        if(transform.rotation.z >= tarAngle)
-        {
-            isrotation = false;
-        }
+        //if(transform.rotation.z >= tarAngle)
+        //{
+        //    isrotation = false;
+        //}
+
         //if(tarAngle >= curAngle)
         //{
         //    transform.rotation = Quaternion.Euler(new Vector3(0, 0, (int)transform.rotation.z));
