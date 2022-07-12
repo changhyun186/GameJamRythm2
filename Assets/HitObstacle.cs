@@ -29,7 +29,7 @@ public abstract class HitObstacle : MonoBehaviour
         if(isCur)
         GameManager.Instance.curHitObstacle = this;
         if (isCur)
-            GetComponent<Renderer>().material.color = Color.white;
+            GetComponentInChildren<Renderer>().material.color = Color.white;
     }
 
     public virtual void Break()

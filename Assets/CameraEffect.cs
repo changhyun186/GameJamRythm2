@@ -25,6 +25,16 @@ public class CameraEffect : MonoSingleTon<CameraEffect>
         transform.DOMove(pos, toCircleDuration);
     }
 
+    public void toTarget()
+    {
+        Vector3 pos = GameManager.Instance.curHitObstacle.transform.position;
+        pos.z -= 10;
+        print(pos);
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        transform.DOMove(pos, toCircleDuration);
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(new Vector2(minX,minY),new Vector2(maxX,minY));

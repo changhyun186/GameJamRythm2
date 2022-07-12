@@ -9,10 +9,7 @@ public class RingObstacle : HitObstacle
     {
         var player = GameManager.Instance.player;
         player.transform.position = leftOut.position;
-        Vector3 dir = leftOut.rotation.eulerAngles;
-        dir.x = 0;
-        dir.y = 0;
-        player.transform.rotation = Quaternion.Euler(dir);
+        player.transform.rotation = leftOut.rotation;
         player.isKeyDownAble = false;
     }
 
@@ -20,10 +17,8 @@ public class RingObstacle : HitObstacle
     {
         var player = GameManager.Instance.player;
         player.transform.position = rightOut.position;
-        Vector3 dir = leftOut.rotation.eulerAngles;
-        dir.x = 0;
-        dir.y = 0;
-        player.transform.rotation = Quaternion.Euler(dir);
+        player.transform.rotation = rightOut.rotation;
+
         player.isKeyDownAble = false;
     }
 
