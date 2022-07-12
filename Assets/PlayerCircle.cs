@@ -41,14 +41,19 @@ public class PlayerCircle : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print("dafd");
-        if (collision.gameObject.tag == "Mirror")
+        if (collision.gameObject.tag == "Mirror"|| collision.gameObject.tag == "Waiter")
         {
             isEalryHit = false;
             if (downAble != null)
                 StopCor();
-            downAble = StartCoroutine(KeyDownAbleCor());
+            if (collision.gameObject.tag != "Waiter")
+                downAble = StartCoroutine(KeyDownAbleCor());
+            else
+            {
+                isKeyDownAble = true;
+                collision.gameObject.GetComponent<SpinObstacle>().Rotate();
+            }
             print("hit0");
-            CameraEffect.Instance.cameraToCircle();
             Vector3 dir = Vector3.Reflect(transform.forward, collision.transform.up);
             Debug.DrawRay(collision.contacts[0].point, dir * 100, Color.gray, 10);
             targetDir = dir;
@@ -85,6 +90,7 @@ public class PlayerCircle : MonoBehaviour
     }
     public void StopCor()
     {
+        if(downAble!=null)
         StopCoroutine(downAble);
     }
 }

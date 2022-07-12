@@ -48,6 +48,7 @@ public class GameManager : MonoSingleTon<GameManager>
         curHitObstacle.OnRightKeyDown();
         player.StopCor();
         curHitObstacle.Break();
+        CameraEffect.Instance.toTarget();
     }
 
     public void OnKeyDDown()
@@ -55,5 +56,6 @@ public class GameManager : MonoSingleTon<GameManager>
         curHitObstacle.OnLeftKeyDown();
         player.StopCor();
         curHitObstacle.Break();
+        CameraEffect.Instance.toTarget();
     }
 }
