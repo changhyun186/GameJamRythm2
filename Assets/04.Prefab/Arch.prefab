@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5446021367509994660}
   - component: {fileID: 5446021367509994661}
+  - component: {fileID: 8302197818771545117}
   m_Layer: 0
   m_Name: OutCenter+EarlyCollider
   m_TagString: MirrorEarly
@@ -210,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 5446021367509994659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.365, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.833}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5446021366696321517}
@@ -229,5 +230,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3536012, y: 1, z: 0.90549564}
-  m_Center: {x: 0.02965188, y: 0, z: 0.20924664}
+  m_Size: {x: 2.3210955, y: 1, z: 1.2138253}
+  m_Center: {x: 0.29272947, y: 0, z: 0.3634096}
+--- !u!114 &8302197818771545117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446021367509994659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f59c1e4b5c5d764dbf269ac56dde427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myObstacle: {fileID: 0}

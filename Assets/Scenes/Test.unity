@@ -2057,7 +2057,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1131061209}
   - component: {fileID: 1131061208}
-  - component: {fileID: 1131061207}
   - component: {fileID: 1131061210}
   - component: {fileID: 1131061211}
   m_Layer: 0
@@ -2067,14 +2066,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1131061207
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131061206}
-  m_Enabled: 1
 --- !u!20 &1131061208
 Camera:
   m_ObjectHideFlags: 0
@@ -4600,6 +4591,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2074139210710405146, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.0629416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074139210710405146, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0629416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074139210710405146, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.0629416
+      objectReference: {fileID: 0}
     - target: {fileID: 5140100611205562850, guid: 1a6b5c6ca43220b488d1a99fe887002f, type: 3}
       propertyPath: m_Name
       value: Arch
