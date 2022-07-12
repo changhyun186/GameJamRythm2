@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoSingleTon<AudioManager>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioPlayer audioObject;
 
-    // Update is called once per frame
-    void Update()
+    public void Play(AudioClip clip,MixerChannel channel)
     {
-        
+        var audio = Instantiate(audioObject,transform);
+        audio.clip = clip;
+        audio.channel = channel;
+        audio.Play();
     }
 }

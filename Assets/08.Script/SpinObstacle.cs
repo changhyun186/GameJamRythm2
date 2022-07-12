@@ -15,6 +15,7 @@ public class SpinObstacle : PipeObstacle
         {
             transform.DORotate(transform.eulerAngles + new Vector3(0, 0, 45), 0.1f);
             yield return wait;
+            //GameManager.Instance.player.GetComponent<Renderer>().enabled = false;
         }
 
     }

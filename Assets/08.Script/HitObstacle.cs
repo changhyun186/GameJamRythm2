@@ -12,6 +12,7 @@ public abstract class HitObstacle : MonoBehaviour
 
     public GameObject breakPrefab;
     public ParticleSystem breakParticle;
+    public TileAudio tileAudio;
 
     public string Type;
 
@@ -19,6 +20,7 @@ public abstract class HitObstacle : MonoBehaviour
     {
         col = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
+        tileAudio = GetComponentInChildren<TileAudio>();
         SetIsCurTarget(false);
     }
 
@@ -42,6 +44,7 @@ public abstract class HitObstacle : MonoBehaviour
 
     public virtual void Break()
     {
+        AudioManager.Instance.Play(tileAudio.clip,MixerChannel.Tile);
         SetIsCurTarget(false);
         nextObstacle.SetIsCurTarget(true);
         if(breakParticle != null)

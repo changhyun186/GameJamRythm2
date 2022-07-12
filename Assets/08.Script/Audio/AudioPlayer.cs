@@ -24,6 +24,7 @@ public class AudioPlayer : MonoBehaviour
         if(clip != null)
         audioSource.clip = clip;
         audioSource.Play();
+        Destroy(gameObject, 10);
     }
 
 }

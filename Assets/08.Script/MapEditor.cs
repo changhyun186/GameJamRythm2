@@ -25,25 +25,25 @@ public class MapEditor : MonoBehaviour
     }
     public void InstantiatePortal()
     {
-        var instance = Instantiate(portal, transform);
+        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(portal, transform);
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
         Selection.activeObject = cur;
 
-        var instanceL = Instantiate(portL, transform);
+        var instanceL = (HitObstacle)PrefabUtility.InstantiatePrefab(portL, transform);
         instanceL.transform.position = cur.transform.position;
         ((RingObstacle)cur).leftOut = instanceL.transform.Find("Point");
 
 
-        var instanceR = Instantiate(portR, transform);
+        var instanceR = (HitObstacle)PrefabUtility.InstantiatePrefab(portR, transform);
         instanceR.transform.position = cur.transform.position;
         ((RingObstacle)cur).rightOut = instanceR.transform.Find("Point");
     }
 
     public void InstanatiateTwoDir()
     {
-        var instance = Instantiate(twoDir, transform);
+        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(twoDir, transform);
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
@@ -52,7 +52,7 @@ public class MapEditor : MonoBehaviour
 
     public void InstantiateSpinner()
     {
-        var instance = Instantiate(spinner, transform);
+        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(spinner, transform);
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
