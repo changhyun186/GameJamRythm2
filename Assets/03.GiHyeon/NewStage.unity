@@ -880,6 +880,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 165083578829266843, guid: db3374b95512f4d468f7948152bdec33, type: 3}
+      propertyPath: clip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 165083578829266843, guid: db3374b95512f4d468f7948152bdec33, type: 3}
+      propertyPath: clip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 949aa5e39ec33164daa0a6c1240822fe, type: 3}
     - target: {fileID: 1883216852050472938, guid: db3374b95512f4d468f7948152bdec33, type: 3}
       propertyPath: m_Name
       value: MapEditor
