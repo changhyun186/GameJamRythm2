@@ -21,7 +21,7 @@ public class turn : MonoBehaviour
         if(timer >= 0.001f)
         {
             rotationz -= 0.003f;
-            Debug.Log($"{rotationz}");
+            //Debug.Log($"{rotationz}");
         }
     }
 }

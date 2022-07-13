@@ -8,12 +8,14 @@ public enum KeyType
 }
 public class PlayerCircle : MonoBehaviour
 {
+    public bool isStart = false;
     public Rigidbody rb;
     public float speed;
     public bool isKeyDownAble,isEalryHit;
     public KeyType EalryKeyType;
     Coroutine downAble;
     public Vector3 targetDir;
+    public GameObject deathParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class PlayerCircle : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!isStart) return;
         if(!isKeyDownAble)
         transform.Translate(Vector3.forward * speed,Space.Self);
         else
@@ -38,9 +41,13 @@ public class PlayerCircle : MonoBehaviour
         Gizmos.DrawRay(transform.position, transform.forward);
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
-        print("dafd");
+        if(collision.gameObject.tag == "Star")
+        {
+            GameManager.Instance.Complete();
+        }
         if (collision.gameObject.tag == "Mirror"|| collision.gameObject.tag == "Waiter")
         {
             isEalryHit = false;
@@ -81,12 +88,8 @@ public class PlayerCircle : MonoBehaviour
 
         yield return new WaitForSeconds(keyDownableSec);
         isKeyDownAble = false;
-        Die();
+        GameManager.Instance.Die();
 
-    }
-    public void Die()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
     public void StopCor()
     {

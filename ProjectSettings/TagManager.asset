@@ -7,6 +7,7 @@ TagManager:
   - Mirror
   - MirrorEarly
   - Waiter
+  - Star
   layers:
   - Default
   - TransparentFX
