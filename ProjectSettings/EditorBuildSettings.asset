@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/04.ChangHyunMaps/Level4.unity
     guid: 5987111687ae07a48b37d8c4706bba16
   - enabled: 1
+    path: Assets/02.YeonSoo/ReadyMac3.unity
+    guid: 307aaec2daa9ee7408983554f07e937c
+  - enabled: 1
     path: Assets/02.YeonSoo/ReadyMac2.unity
     guid: abbe7777567fe3447915844b56c8cc4b
   - enabled: 1
