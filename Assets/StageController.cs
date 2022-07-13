@@ -41,6 +41,7 @@ public class StageController : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
+            if (CurStage == null) return;
             BlackPan.transform.GetComponent<RectTransform>().DOAnchorPosX(0, 1);
             Invoke(nameof(LoadScene), 1);
         }
@@ -49,8 +50,11 @@ public class StageController : MonoBehaviour
     {
         SceneManager.LoadScene(CurStage.SceneName);
     }
+
+    public AudioClip[] moveSounds;
     public void BallMove(int i)
     {
+        AudioManager.Instance.Play(moveSounds[Random.Range(0, moveSounds.Length)],MixerChannel.Effect);
         Instantiate(effect, ballController.transform.position, Quaternion.identity);
         CurStage = stages[i];
         StageElement stage = stages[i];
