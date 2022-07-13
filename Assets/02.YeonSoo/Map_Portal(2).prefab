@@ -68,6 +68,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605503994708921781}
     m_Modifications:
+    - target: {fileID: 1164264803445363364, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
+      propertyPath: clip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164264803445363364, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
+      propertyPath: clip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b683587a3fdc944793cd8fefae8f2ad, type: 3}
     - target: {fileID: 1324613450509414913, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -142,6 +150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605503994708921781}
     m_Modifications:
+    - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
+      propertyPath: clip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -487,6 +499,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605503994708921781}
     m_Modifications:
+    - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
+      propertyPath: clip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -564,6 +580,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605503994708921781}
     m_Modifications:
+    - target: {fileID: 1164264803445363364, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
+      propertyPath: clip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164264803445363364, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
+      propertyPath: clip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: fa1107efe92e2b247ae2462f9f345f20, type: 3}
     - target: {fileID: 1324613450509414913, guid: 2d13fcd0567c3d64fbb936e08c01a837, type: 3}
       propertyPath: m_RootOrder
       value: 6
