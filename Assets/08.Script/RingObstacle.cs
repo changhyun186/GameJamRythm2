@@ -5,6 +5,13 @@ using UnityEngine;
 public class RingObstacle : HitObstacle
 {
     public Transform leftOut, rightOut;
+
+    public override void Break()
+    {
+        base.Break();
+        Destroy(gameObject);
+    }
+
     public override void OnLeftKeyDown()
     {
         var player = GameManager.Instance.player;

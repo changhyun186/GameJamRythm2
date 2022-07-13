@@ -47,8 +47,8 @@ public abstract class HitObstacle : MonoBehaviour
     {
         tileAudio?.Play();
         SetIsCurTarget(false);
-        nextObstacle.SetIsCurTarget(true);
-        if(breakParticle != null)
+        nextObstacle?.SetIsCurTarget(true);
+        if (breakParticle != null)
             Instantiate(breakParticle, transform.position, Quaternion.identity);
         if(breakPrefab!=null)
             Instantiate(breakPrefab, transform.position, Quaternion.identity);
