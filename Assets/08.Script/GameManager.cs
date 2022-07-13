@@ -52,6 +52,7 @@ public class GameManager : MonoSingleTon<GameManager>
 
     public void Update()
     {
+        if (!player.isStart) return;
         if(Input.GetKeyDown(KeyCode.D))
         {
             if(player.isEalryHit)
