@@ -30,13 +30,13 @@ EditorBuildSettings:
     path: Assets/04.ChangHyunMaps/Level4.unity
     guid: 5987111687ae07a48b37d8c4706bba16
   - enabled: 1
-    path: Assets/02.YeonSoo/ReadyForBigMac.unity
+    path: Assets/02.YeonSoo/ReadyMac2.unity
     guid: abbe7777567fe3447915844b56c8cc4b
   - enabled: 1
-    path: Assets/02.YeonSoo/SomeOf 2.unity
+    path: Assets/02.YeonSoo/ReadyMac1.unity
     guid: 60dbf91ea8328b44fbaba8a41af42a95
   - enabled: 1
-    path: Assets/02.YeonSoo/SomeOf 3.unity
+    path: Assets/02.YeonSoo/ReadyMac.unity
     guid: 0183a7c86b9c114429161bb1bd5ebb89
   - enabled: 1
     path: Assets/02.YeonSoo/BigMac.unity
