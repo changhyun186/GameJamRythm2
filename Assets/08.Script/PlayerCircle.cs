@@ -46,6 +46,7 @@ public class PlayerCircle : MonoBehaviour
     {
         if(collision.gameObject.tag == "Star")
         {
+            collision.gameObject.GetComponent<Star>().Die();
             GameManager.Instance.Complete();
         }
         if (collision.gameObject.tag == "Mirror"|| collision.gameObject.tag == "Waiter")

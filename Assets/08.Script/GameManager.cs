@@ -104,7 +104,7 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         var particle = Instantiate(deathParticle, player.transform.position, Quaternion.identity);
         Destroy(player.gameObject);
-        Invoke(nameof(LoadCurScene), 0.5f);
+        Invoke(nameof(LoadCurScene), 2);
     }
 
     void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
