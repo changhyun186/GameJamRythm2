@@ -58,4 +58,25 @@ public class MapEditor : MonoBehaviour
         cur = instance;
         Selection.activeObject = cur;
     }
+
+    //public GameObject childer;
+    //[ContextMenu("asdds")]
+    //public void sefdfgsasgf()
+    //{
+    //    for(int i=0;i<transform.childCount;i++)
+    //    {
+    //        var tr = transform.GetChild(i);
+
+    //        Instantiate(childer, tr);
+    //    }
+    //}
+    //[ContextMenu("dfasf")]
+    //public void KIller()
+    //{
+    //    for (int i = 0; i < transform.childCount; i++)
+    //    {
+    //        var tr = transform.GetChild(i).GetChild(2);
+    //        Destroy(tr.gameObject);
+    //    }
+    //}
 }
