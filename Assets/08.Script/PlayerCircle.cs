@@ -15,6 +15,7 @@ public class PlayerCircle : MonoBehaviour
     public KeyType EalryKeyType;
     Coroutine downAble;
     public Vector3 targetDir;
+    public GameObject deathParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -92,8 +93,10 @@ public class PlayerCircle : MonoBehaviour
     }
     public void Die()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        Invoke(nameof(LoadCurScene), 0.5f);
     }
+
+    void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     public void StopCor()
     {
         if(downAble!=null)

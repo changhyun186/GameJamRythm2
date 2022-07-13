@@ -961,6 +961,7 @@ MonoBehaviour:
   isEalryHit: 0
   EalryKeyType: 0
   targetDir: {x: 0, y: 0, z: 0}
+  deathParticle: {fileID: 0}
   keyDownableSec: 0.2
 --- !u!33 &1236037104
 MeshFilter:
@@ -1754,6 +1755,7 @@ MonoBehaviour:
   player: {fileID: 1236037103}
   CountAmount: 3
   contText: {fileID: 564185756}
+  NextSceneName: 
 --- !u!4 &2040125154
 Transform:
   m_ObjectHideFlags: 0
