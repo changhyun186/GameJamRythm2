@@ -6,6 +6,14 @@ using DG.Tweening;
 public class SpinObstacle : PipeObstacle
 {
     public float waittime;
+
+
+    public override void Break()
+    {
+        base.Break();
+        Destroy(gameObject);
+    }
+
     IEnumerator rotater()
     {
 
