@@ -8,6 +8,7 @@ public enum KeyType
 }
 public class PlayerCircle : MonoBehaviour
 {
+    public bool isStart = false;
     public Rigidbody rb;
     public float speed;
     public bool isKeyDownAble,isEalryHit;
@@ -24,6 +25,7 @@ public class PlayerCircle : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!isStart) return;
         if(!isKeyDownAble)
         transform.Translate(Vector3.forward * speed,Space.Self);
         else

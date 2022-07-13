@@ -1,14 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoSingleTon<GameManager>
 {
     public HitObstacle curHitObstacle;
     public PlayerCircle player;
+    public int CountAmount = 6;
+    public TMP_Text contText;
     private void Start()
     {
         curHitObstacle.SetIsCurTarget(true);
+        StartCoroutine(countCor());
+    }
+
+    IEnumerator countCor()
+    {
+        WaitForSeconds wait = new WaitForSeconds(0.6f);
+        int temp = CountAmount;
+        contText.text = CountAmount.ToString();
+        for(int i = 0; i < temp; i++)
+        {
+            yield return wait;
+            CountAmount--;
+            if (CountAmount <= 0)
+            {
+                Destroy(contText.gameObject);
+                player.isStart = true;
+            }
+            else
+                contText.text = CountAmount.ToString();
+            
+        }
     }
 
     public void Update()
