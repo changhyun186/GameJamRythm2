@@ -42,7 +42,7 @@ public class GameManager : MonoSingleTon<GameManager>
             {
                 Destroy(countText.gameObject);
                 player.isStart = true;
-                music.Play();
+                music?.Play();
             }
             else
                 countText.text = CountAmount.ToString();
