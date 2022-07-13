@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+  - enabled: 0
     path: Assets/01.Gunny/Test1.unity
     guid: f58b6696c6eafc44a8943d254f811713
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test.unity
     guid: ad2bc938cb6add5438641d5158e3314a
   - enabled: 1
@@ -29,4 +29,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/04.ChangHyunMaps/Level4.unity
     guid: 5987111687ae07a48b37d8c4706bba16
+  - enabled: 1
+    path: Assets/02.YeonSoo/ReadyForBigMac.unity
+    guid: abbe7777567fe3447915844b56c8cc4b
+  - enabled: 1
+    path: Assets/02.YeonSoo/SomeOf 2.unity
+    guid: 60dbf91ea8328b44fbaba8a41af42a95
+  - enabled: 1
+    path: Assets/02.YeonSoo/SomeOf 3.unity
+    guid: 0183a7c86b9c114429161bb1bd5ebb89
+  - enabled: 1
+    path: Assets/02.YeonSoo/BigMac.unity
+    guid: e0ef6364f7f63ca4a851b9661b08cd86
+  - enabled: 1
+    path: Assets/02.YeonSoo/Portal1.unity
+    guid: deee5f0655068c4448f3330ec554c35f
+  - enabled: 1
+    path: Assets/02.YeonSoo/Portal2.unity
+    guid: ca1b9ab1c5a0a58409da5f8f75e0597a
+  - enabled: 1
+    path: Assets/02.YeonSoo/Arirang.unity
+    guid: e4b5999e1acb3044ab99a49a5bfdc43f
   m_configObjects: {}
