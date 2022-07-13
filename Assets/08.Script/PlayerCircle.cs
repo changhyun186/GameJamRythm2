@@ -38,9 +38,13 @@ public class PlayerCircle : MonoBehaviour
         Gizmos.DrawRay(transform.position, transform.forward);
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
-        print("dafd");
+        if(collision.gameObject.tag == "Star")
+        {
+            GameManager.Instance.Complete();
+        }
         if (collision.gameObject.tag == "Mirror"|| collision.gameObject.tag == "Waiter")
         {
             isEalryHit = false;
