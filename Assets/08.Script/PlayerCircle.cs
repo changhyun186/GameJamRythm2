@@ -63,6 +63,14 @@ public class PlayerCircle : MonoBehaviour
             }
             print("hit0");
             Vector3 dir = Vector3.Reflect(transform.forward, collision.transform.up);
+            if (GameManager.Instance.isGuildeLine)
+            {
+                var line =Instantiate(GameManager.Instance.GuildLine);
+                var vec = collision.contacts[0].point;
+                vec.z = 1;
+                line.transform.position = vec;
+                line.transform.rotation = Quaternion.LookRotation(dir);
+            }
             Debug.DrawRay(collision.contacts[0].point, dir * 100, Color.gray, 10);
             targetDir = dir;
             if(EalryKeyType != KeyType.None)

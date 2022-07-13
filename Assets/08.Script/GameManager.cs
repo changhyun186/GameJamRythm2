@@ -6,6 +6,10 @@ using TMPro;
 
 public class GameManager : MonoSingleTon<GameManager>
 {
+
+    public GameObject GuildLine;
+    public bool isGuildeLine;
+    public AudioClip countDown;
     public GameObject Canvas2;
     public GameObject Canvas;
     public HitObstacle curHitObstacle;
@@ -31,12 +35,14 @@ public class GameManager : MonoSingleTon<GameManager>
         for(int i = 0; i < temp; i++)
         {
             yield return wait;
+            if(countDown!=null)
+            AudioManager.Instance.Play(countDown, MixerChannel.Effect);
             CountAmount--;
             if (CountAmount <= 0)
             {
                 Destroy(countText.gameObject);
                 player.isStart = true;
-                music.Play();
+                music?.Play();
             }
             else
                 countText.text = CountAmount.ToString();

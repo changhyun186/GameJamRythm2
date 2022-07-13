@@ -219,3 +219,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathParticle: {fileID: 1380707409876060153, guid: 4d4a5f46ae561fa47bc8785d96f832c7, type: 3}
+  clip: {fileID: 8300000, guid: f593baa8d12067847bf862997e3ce3d8, type: 3}
