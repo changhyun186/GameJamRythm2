@@ -10,6 +10,7 @@ public class GameManager : MonoSingleTon<GameManager>
     public PlayerCircle player;
     public int CountAmount = 6;
     public TMP_Text countText;
+    public GameObject deathParticle;
     public string NextSceneName;
     private void Start()
     {
@@ -48,7 +49,7 @@ public class GameManager : MonoSingleTon<GameManager>
             }
             if (!player.isKeyDownAble)
             {
-                player.Die();
+                Die();
                 return;
             }
             OnKeyDDown();
@@ -62,7 +63,7 @@ public class GameManager : MonoSingleTon<GameManager>
             }
             if (!player.isKeyDownAble)
             {
-                player.Die();
+                Die();
                 return;
             }
             OnKeyKDown();
@@ -93,4 +94,12 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         SceneManager.LoadScene(NextSceneName);
     }
+    public void Die()
+    {
+        var particle = Instantiate(deathParticle, player.transform.position, Quaternion.identity);
+        Destroy(player.gameObject);
+        Invoke(nameof(LoadCurScene), 0.5f);
+    }
+
+    void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 }
