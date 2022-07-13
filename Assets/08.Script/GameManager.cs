@@ -9,13 +9,8 @@ public class GameManager : MonoSingleTon<GameManager>
     public HitObstacle curHitObstacle;
     public PlayerCircle player;
     public int CountAmount = 6;
-<<<<<<< HEAD
     public TMP_Text countText;
-=======
-    public TMP_Text contText;
     public string NextSceneName;
-
->>>>>>> 97da7ca65178bf069738479f2d8cc670a792f877
     private void Start()
     {
         curHitObstacle.SetIsCurTarget(true);
