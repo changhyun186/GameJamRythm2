@@ -6,6 +6,7 @@ using TMPro;
 
 public class GameManager : MonoSingleTon<GameManager>
 {
+    public GameObject Canvas;
     public HitObstacle curHitObstacle;
     public PlayerCircle player;
     public int CountAmount = 6;
@@ -17,6 +18,7 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         curHitObstacle.SetIsCurTarget(true);
         StartCoroutine(countCor());
+        Canvas.SetActive(true);
     }
 
     IEnumerator countCor()
