@@ -9,9 +9,13 @@ public class GameManager : MonoSingleTon<GameManager>
     public HitObstacle curHitObstacle;
     public PlayerCircle player;
     public int CountAmount = 6;
+<<<<<<< HEAD
+    public TMP_Text countText;
+=======
     public TMP_Text contText;
     public string NextSceneName;
 
+>>>>>>> 97da7ca65178bf069738479f2d8cc670a792f877
     private void Start()
     {
         curHitObstacle.SetIsCurTarget(true);
@@ -22,18 +26,18 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         WaitForSeconds wait = new WaitForSeconds(0.6f);
         int temp = CountAmount;
-        contText.text = CountAmount.ToString();
+        countText.text = CountAmount.ToString();
         for(int i = 0; i < temp; i++)
         {
             yield return wait;
             CountAmount--;
             if (CountAmount <= 0)
             {
-                Destroy(contText.gameObject);
+                Destroy(countText.gameObject);
                 player.isStart = true;
             }
             else
-                contText.text = CountAmount.ToString();
+                countText.text = CountAmount.ToString();
             
         }
     }
