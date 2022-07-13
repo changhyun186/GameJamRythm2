@@ -6,6 +6,8 @@ using TMPro;
 
 public class GameManager : MonoSingleTon<GameManager>
 {
+    public GameObject Canvas2;
+    public GameObject Canvas;
     public HitObstacle curHitObstacle;
     public PlayerCircle player;
     public int CountAmount = 6;
@@ -17,6 +19,8 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         curHitObstacle.SetIsCurTarget(true);
         StartCoroutine(countCor());
+        Canvas.SetActive(true);
+        Canvas2.SetActive(true);
     }
 
     IEnumerator countCor()
@@ -100,7 +104,7 @@ public class GameManager : MonoSingleTon<GameManager>
     {
         var particle = Instantiate(deathParticle, player.transform.position, Quaternion.identity);
         Destroy(player.gameObject);
-        Invoke(nameof(LoadCurScene), 0.5f);
+        Invoke(nameof(LoadCurScene), 2);
     }
 
     void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
