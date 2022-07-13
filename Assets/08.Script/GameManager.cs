@@ -12,6 +12,7 @@ public class GameManager : MonoSingleTon<GameManager>
     public TMP_Text countText;
     public GameObject deathParticle;
     public string NextSceneName;
+    public AudioSource music;
     private void Start()
     {
         curHitObstacle.SetIsCurTarget(true);
@@ -31,6 +32,7 @@ public class GameManager : MonoSingleTon<GameManager>
             {
                 Destroy(countText.gameObject);
                 player.isStart = true;
+                music.Play();
             }
             else
                 countText.text = CountAmount.ToString();
