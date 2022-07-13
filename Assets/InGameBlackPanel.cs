@@ -7,6 +7,6 @@ public class InGameBlackPanel : MonoBehaviour
 {
     private void Start()
     {
-        transform.DOMoveX(50, 1);
+        transform.DOMoveX(100, 1);
     }
 }
