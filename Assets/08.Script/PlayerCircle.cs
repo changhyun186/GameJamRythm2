@@ -88,15 +88,9 @@ public class PlayerCircle : MonoBehaviour
 
         yield return new WaitForSeconds(keyDownableSec);
         isKeyDownAble = false;
-        Die();
+        GameManager.Instance.Die();
 
     }
-    public void Die()
-    {
-        Invoke(nameof(LoadCurScene), 0.5f);
-    }
-
-    void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     public void StopCor()
     {
         if(downAble!=null)
