@@ -5,8 +5,9 @@ using DG.Tweening;
 
 public class InGameBlackPanel : MonoBehaviour
 {
+    public float amount=100;
     private void Start()
     {
-        transform.DOMoveX(100, 1);
+        transform.DOMoveX(amount, 1);
     }
 }
