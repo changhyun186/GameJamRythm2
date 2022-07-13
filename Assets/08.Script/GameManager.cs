@@ -58,4 +58,8 @@ public class GameManager : MonoSingleTon<GameManager>
         curHitObstacle.Break();
         CameraEffect.Instance.toTarget();
     }
+
+    public void Complete()
+    {
+    }
 }
