@@ -6,16 +6,19 @@ using TMPro;
 
 public class GameManager : MonoSingleTon<GameManager>
 {
+    public GameObject Canvas;
     public HitObstacle curHitObstacle;
     public PlayerCircle player;
     public int CountAmount = 6;
     public TMP_Text countText;
     public GameObject deathParticle;
     public string NextSceneName;
+    public AudioSource music;
     private void Start()
     {
         curHitObstacle.SetIsCurTarget(true);
         StartCoroutine(countCor());
+        Canvas.SetActive(true);
     }
 
     IEnumerator countCor()
@@ -31,6 +34,7 @@ public class GameManager : MonoSingleTon<GameManager>
             {
                 Destroy(countText.gameObject);
                 player.isStart = true;
+                music.Play();
             }
             else
                 countText.text = CountAmount.ToString();
