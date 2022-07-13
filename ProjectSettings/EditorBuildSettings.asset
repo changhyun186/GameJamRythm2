@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/04.ChangHyunMaps/Level3.unity
     guid: 61232b06d500a274fb240494e85e0b56
+  - enabled: 1
+    path: Assets/04.ChangHyunMaps/Level4.unity
+    guid: 5987111687ae07a48b37d8c4706bba16
   m_configObjects: {}
