@@ -1237,7 +1237,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 8966b18c1a024064b860ad1c923bf9d1, type: 3}
+      objectReference: {fileID: 8300000, guid: ac74c472e967bbd41905ce4601ce7041, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -2038,7 +2038,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 8966b18c1a024064b860ad1c923bf9d1, type: 3}
+      objectReference: {fileID: 8300000, guid: ac74c472e967bbd41905ce4601ce7041, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
