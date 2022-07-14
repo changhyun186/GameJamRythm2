@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -19,12 +20,16 @@ public class GameManager : MonoSingleTon<GameManager>
     public GameObject deathParticle;
     public string NextSceneName;
     public AudioSource music;
+    public Toggle toggle;
 
+
+    public Setting setting;
     public bool isHard;
     
 
     private void Start()
     {
+        HardMode();
         if(isHard)
         {
             MapEditor.Instance.ColorRemove();
@@ -61,6 +66,19 @@ public class GameManager : MonoSingleTon<GameManager>
 
     public void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            setting.gameObject.SetActive(!setting.gameObject.activeSelf);
+            bool isOn = setting.gameObject.activeSelf;
+            if(isOn)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
         if (!player.isStart) return;
         if(Input.GetKeyDown(KeyCode.D))
         {
@@ -152,8 +170,28 @@ public class GameManager : MonoSingleTon<GameManager>
         var particle = Instantiate(deathParticle, player.transform.position, Quaternion.identity);
         Destroy(player.gameObject);
         Invoke(nameof(LoadCurScene), 2);
+        if(music!=null)
         music.Stop();
     }
 
-    void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    public void HardMode()
+    {
+        toggle.isOn = PlayerPrefs.GetInt("Hard", 0) == 1?true:false;
+        isHard = !toggle.isOn;
+    }
+    public void SetHardMode(bool isOn)
+    {
+        PlayerPrefs.SetInt("Hard", isOn ? 1 : 0);
+        HardMode();
+        if(setting.gameObject.activeSelf)
+        {
+            Die();
+            TimeScaleReset();
+        }
+    }
+    public void TimeScaleReset()
+    {
+        Time.timeScale = 1;
+    }
+    public void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 }
