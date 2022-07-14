@@ -23,6 +23,7 @@ public class MapEditor : MonoSingleTon<MapEditor>
             try
             {
             var tr = transform.GetChild(i);
+                if (tr.gameObject.tag == "Star") continue;
             tr.GetComponent<Renderer>().material = unColorMat;
             }
             catch

@@ -8,6 +8,7 @@ public class Setting : MonoSingleTon<Setting>
     public void GoHome()
     {
         SceneManager.LoadScene("StartScene");
+        Time.timeScale = 1;
     }
 
 
