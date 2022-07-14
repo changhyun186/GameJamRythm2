@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/02.YeonSoo/ReadyMac.unity
     guid: 0183a7c86b9c114429161bb1bd5ebb89
   - enabled: 1
+    path: Assets/02.YeonSoo/TwoDirectHard.unity
+    guid: 42cba1473053d3f4495eb77927639dcb
+  - enabled: 1
     path: Assets/02.YeonSoo/BigMac.unity
     guid: e0ef6364f7f63ca4a851b9661b08cd86
   - enabled: 1
