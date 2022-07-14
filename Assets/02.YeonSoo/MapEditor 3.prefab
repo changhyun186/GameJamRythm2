@@ -95,7 +95,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 98a125eda2246964392110a365caed7e, type: 3}
+      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
     - target: {fileID: 4180505113281583706, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB77C"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -180,7 +180,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 3929d77d4b7d78947b2b60359c202d90, type: 3}
+      objectReference: {fileID: 8300000, guid: 739b8860b2be46f41a4befb67961d218, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -231,7 +231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uD30C"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: d6f5de8ac7481d64ca0d4ae3225ac0d9, type: 3}
+      objectReference: {fileID: 8300000, guid: 7b683587a3fdc944793cd8fefae8f2ad, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC2DC"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -358,7 +358,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 46c25cfd1f954bd4082fac46987ea93c, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -409,7 +409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -447,7 +447,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -498,7 +498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -536,7 +536,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 98a125eda2246964392110a365caed7e, type: 3}
+      objectReference: {fileID: 8300000, guid: fa1107efe92e2b247ae2462f9f345f20, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -614,7 +614,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: c8c397a3bd5452e4a9fe06082d920ffc, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -665,7 +665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -754,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC194"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -792,7 +792,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 9e0dd5c1bc3b47f4091be747c688aea6, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -843,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -881,7 +881,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 9e0dd5c1bc3b47f4091be747c688aea6, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -932,7 +932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC194"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1059,7 +1059,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: c8c397a3bd5452e4a9fe06082d920ffc, type: 3}
+      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1110,7 +1110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB77C"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1148,7 +1148,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 4c177985d5e55fd42938f4c36e670612, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1199,7 +1199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1237,7 +1237,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: fa1107efe92e2b247ae2462f9f345f20, type: 3}
+      objectReference: {fileID: 8300000, guid: 8966b18c1a024064b860ad1c923bf9d1, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1288,7 +1288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uBBF8"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1326,7 +1326,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: fa1107efe92e2b247ae2462f9f345f20, type: 3}
+      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1377,7 +1377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB77C"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1415,7 +1415,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: f76e7e24e3c7ae74e84f00c3fd9f00f3, type: 3}
+      objectReference: {fileID: 8300000, guid: 7b683587a3fdc944793cd8fefae8f2ad, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1466,7 +1466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC2DC"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1504,7 +1504,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 7b683587a3fdc944793cd8fefae8f2ad, type: 3}
+      objectReference: {fileID: 8300000, guid: 1626dc8b8f499d746b6f2bca64a92d89, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1555,7 +1555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB808"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1593,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: f76e7e24e3c7ae74e84f00c3fd9f00f3, type: 3}
+      objectReference: {fileID: 8300000, guid: 1626dc8b8f499d746b6f2bca64a92d89, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1644,7 +1644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB808"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
+      objectReference: {fileID: 8300000, guid: 1626dc8b8f499d746b6f2bca64a92d89, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1733,7 +1733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB808"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1771,7 +1771,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 7b683587a3fdc944793cd8fefae8f2ad, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1822,7 +1822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1860,7 +1860,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 3929d77d4b7d78947b2b60359c202d90, type: 3}
+      objectReference: {fileID: 8300000, guid: 7b683587a3fdc944793cd8fefae8f2ad, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -1911,7 +1911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC2DC"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1949,7 +1949,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 949aa5e39ec33164daa0a6c1240822fe, type: 3}
+      objectReference: {fileID: 8300000, guid: 1626dc8b8f499d746b6f2bca64a92d89, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -2000,7 +2000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB808"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2038,7 +2038,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
+      objectReference: {fileID: 8300000, guid: 8966b18c1a024064b860ad1c923bf9d1, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -2089,7 +2089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uBBF8"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2240,7 +2240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC194"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2278,7 +2278,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 46c25cfd1f954bd4082fac46987ea93c, type: 3}
+      objectReference: {fileID: 8300000, guid: 47400690799662e4086f74c8be6247c0, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -2329,7 +2329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB77C"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2367,7 +2367,7 @@ PrefabInstance:
     - target: {fileID: 2480597585428938444, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: d6f5de8ac7481d64ca0d4ae3225ac0d9, type: 3}
+      objectReference: {fileID: 8300000, guid: b75cfd66ee8b10144bbf4126e1c7858d, type: 3}
     - target: {fileID: 4180505113281583705, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: nextObstacle
       value: 
@@ -2418,7 +2418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uB3C4"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2507,7 +2507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583707, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: "\uC194"
       objectReference: {fileID: 0}
     - target: {fileID: 4180505113281583711, guid: f256c0909ff298b4daaa6a3c12a37b7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
