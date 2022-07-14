@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/02.YeonSoo/Sibal.unity
+    guid: 360c2a24f531652459ce8850742039db
+  - enabled: 1
     path: Assets/09.UI/StartScene.unity
     guid: dd7a69e54aeb1714fb990121666d6f0f
   - enabled: 1
@@ -68,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02.YeonSoo/01.Gunny/GunnyStage3.unity
     guid: c104076b97ae99b4bb45474f3310f37e
+  - enabled: 1
+    path: Assets/04.ChangHyunMaps/HardCore/WAYS.unity
+    guid: 40541dc5ba8eaf949a923de73887bf2c
   m_configObjects: {}
