@@ -19,8 +19,16 @@ public class GameManager : MonoSingleTon<GameManager>
     public GameObject deathParticle;
     public string NextSceneName;
     public AudioSource music;
+
+    public bool isHard;
+    
+
     private void Start()
     {
+        if(isHard)
+        {
+            MapEditor.Instance.ColorRemove();
+        }
         curHitObstacle.SetIsCurTarget(true);
         StartCoroutine(countCor());
         Canvas.SetActive(true);
