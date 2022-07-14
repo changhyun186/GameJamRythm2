@@ -83,12 +83,33 @@ public class GameManager : MonoSingleTon<GameManager>
         }
     }
 
-    public void OnKeyKDown()
+    Coroutine directionCheckCor;
+    public void OnKeyKDown() 
     {
         curHitObstacle.OnRightKeyDown();
         player.StopCor();
         curHitObstacle.Break();
         CameraEffect.Instance.toTarget();
+        if (directionCheckCor != null)
+            StopCoroutine(directionCheckCor);
+        directionCheckCor = StartCoroutine(CheckRightDirectionCor(curHitObstacle));
+    }
+    IEnumerator CheckRightDirectionCor(HitObstacle hitObstacle)
+    {
+        if (hitObstacle.nextObstacle != null)
+        {
+            var hitPos = hitObstacle.transform.position;
+            float distanceA = Vector3.Distance(player.transform.position, hitPos);
+            yield return new WaitForSeconds(0.3f);
+            float distanceB = Vector3.Distance(player.transform.position, hitPos);
+            if (distanceB > distanceA)
+            {
+                Die();
+                print("die");
+            }
+            print(distanceB + " " + distanceA);
+        }
+
     }
 
     public void OnKeyDDown()
@@ -97,6 +118,9 @@ public class GameManager : MonoSingleTon<GameManager>
         player.StopCor();
         curHitObstacle.Break();
         CameraEffect.Instance.toTarget();
+        if(directionCheckCor!=null)
+            StopCoroutine(directionCheckCor);
+        directionCheckCor = StartCoroutine(CheckRightDirectionCor(curHitObstacle));
     }
 
     public void Complete()
