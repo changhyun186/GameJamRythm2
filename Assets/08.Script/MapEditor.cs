@@ -5,7 +5,6 @@ using UnityEditor;
 
 public class MapEditor : MonoSingleTon<MapEditor>
 {
-#if UNITY_EDITOR
     public MirrorObstacle mirrorObstacle;
     public PipeObstacle arch;
     public PipeObstacle twoDir;
@@ -32,55 +31,54 @@ public class MapEditor : MonoSingleTon<MapEditor>
             }
         }
     }
-    public void InstantiateMirror()
-    {
-        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(mirrorObstacle,transform);
-        //var instance = Instantiate(mirrorObstacle, transform);
-        instance.transform.position = cur.transform.position;
-        cur.nextObstacle = instance;
-        cur = instance;
-        Selection.activeObject = cur;
+    //public void InstantiateMirror()
+    //{
+    //    //var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(mirrorObstacle,transform);
+    //    //var instance = Instantiate(mirrorObstacle, transform);
+    //    instance.transform.position = cur.transform.position;
+    //    cur.nextObstacle = instance;
+    //    cur = instance;
+    //    //Selection.activeObject = cur;
         
-    }
-    public void InstantiatePortal()
-    {
-        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(portal, transform);
-        instance.transform.position = cur.transform.position;
-        cur.nextObstacle = instance;
-        cur = instance;
-        Selection.activeObject = cur;
+    //}
+    //public void InstantiatePortal()
+    //{
+    //    //var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(portal, transform);
+    //    instance.transform.position = cur.transform.position;
+    //    cur.nextObstacle = instance;
+    //    cur = instance;
+    //    //Selection.activeObject = cur;
 
-        var instanceL = (GameObject)PrefabUtility.InstantiatePrefab(portL, transform);
-        instanceL.transform.position = cur.transform.position;
-        ((RingObstacle)cur).leftOut = instanceL.transform.Find("Point");
-        instanceL.GetComponentInChildren<PortalLine>().target = cur.transform;
+    //    //var instanceL = (GameObject)PrefabUtility.InstantiatePrefab(portL, transform);
+    //    instanceL.transform.position = cur.transform.position;
+    //    ((RingObstacle)cur).leftOut = instanceL.transform.Find("Point");
+    //    instanceL.GetComponentInChildren<PortalLine>().target = cur.transform;
 
 
-        var instanceR = (GameObject)PrefabUtility.InstantiatePrefab(portR, transform);
-        instanceR.transform.position = cur.transform.position;
-        ((RingObstacle)cur).rightOut = instanceR.transform.Find("Point");
-        instanceR.GetComponentInChildren<PortalLine>().target = cur.transform;
-    }
+    //    var instanceR = (GameObject)PrefabUtility.InstantiatePrefab(portR, transform);
+    //    instanceR.transform.position = cur.transform.position;
+    //    ((RingObstacle)cur).rightOut = instanceR.transform.Find("Point");
+    //    instanceR.GetComponentInChildren<PortalLine>().target = cur.transform;
+    //}
 
-    public void InstanatiateTwoDir()
-    {
-        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(twoDir, transform);
-        instance.transform.position = cur.transform.position;
-        cur.nextObstacle = instance;
-        cur = instance;
-        Selection.activeObject = cur;
-    }
+    //public void InstanatiateTwoDir()
+    //{
+    //    var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(twoDir, transform);
+    //    instance.transform.position = cur.transform.position;
+    //    cur.nextObstacle = instance;
+    //    cur = instance;
+    //    //Selection.activeObject = cur;
+    //}
 
-    public void InstantiateSpinner()
-    {
-        var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(spinner, transform);
-        instance.transform.position = cur.transform.position;
-        cur.nextObstacle = instance;
-        cur = instance;
+    //public void InstantiateSpinner()
+    //{
+    //    var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(spinner, transform);
+    //    instance.transform.position = cur.transform.position;
+    //    cur.nextObstacle = instance;
+    //    cur = instance;
 
-        Selection.activeObject = cur;
-    }
-#endif
+    //    //Selection.activeObject = cur;
+    //}
     //public GameObject childer;
     //[ContextMenu("asdds")]
     //public void sefdfgsasgf()
