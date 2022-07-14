@@ -60,6 +60,7 @@ MonoBehaviour:
   portL: {fileID: 5011246909121428199, guid: 453d2b96a857e124caa4588494588f86, type: 3}
   portR: {fileID: 6934445198712917368, guid: 94e26d699f0754d47b4b92657c790f98, type: 3}
   cur: {fileID: 1844926610933182612}
+  unColorMat: {fileID: 2100000, guid: e18586e23af576b4183cd0c5221b927a, type: 2}
 --- !u!1001 &2566591891152579277
 PrefabInstance:
   m_ObjectHideFlags: 0
