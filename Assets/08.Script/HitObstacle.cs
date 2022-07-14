@@ -47,10 +47,45 @@ public abstract class HitObstacle : MonoBehaviour
     }
     void SetAlpha(float i)
     {
+        if(gameObject.name.Contains("ring"))
+        {
+            
+            var render = transform.GetChild(1).GetComponent<Renderer>();
+            var m = render.material;
+            render.material = new Material(m);
+            m = render.material;
+            if (i == 0)
+                return;
+            else
+                m.color = i == 1 ? Color.white : new Color(1, 1, 1, 0.1f);
+            if (i == 1)
+            {
+                print("dafasfasf");
+                m.SetColor("_EmissionColor", Color.white);
+            }
+
+            var render2 = transform.GetChild(0).GetComponent<Renderer>();
+
+            var m2 = render2.material;
+            render2.material = new Material(m2);
+            m = render2.material;
+            if (i == 1)
+            {
+                m.color = Color.green;
+            }
+        }
+        else if( gameObject.name.Contains("TwoDirect"))
+        {
+            GetComponent<Renderer>().material.color = i == 1 ? Color.white : Color.gray;
+        }
+        else
+        {
         var mat = GetComponentInChildren<Renderer>().material;
         var color = mat.color;
         color.a = i;
         mat.color = color;
+        }
+
     }
     public virtual void Break()
     {
