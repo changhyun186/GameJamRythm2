@@ -60,11 +60,17 @@ EditorBuildSettings:
     path: Assets/02.YeonSoo/LittleStar.unity
     guid: 58a04edbbe34a1d42ba5f6dd0eedc5a1
   - enabled: 1
+    path: Assets/03.GiHyeon/It's Mine.unity
+    guid: 05c7d9231e1c9b3408a0b17b2fe2ae5e
+  - enabled: 1
     path: Assets/02.YeonSoo/01.Gunny/GunnyStage.unity
     guid: ea06d3939c1da3f47877273168a4fd41
   - enabled: 1
     path: Assets/02.YeonSoo/01.Gunny/GunnyStage1.unity
     guid: c4f09208c4a77724f94f10b61f17b34c
+  - enabled: 1
+    path: Assets/03.GiHyeon/GihyeonScene.unity
+    guid: 2927443b532621b45959814e7423367d
   - enabled: 1
     path: Assets/02.YeonSoo/01.Gunny/GunnyStage2.unity
     guid: d60b50762e53cc1468e1e1d173190121
