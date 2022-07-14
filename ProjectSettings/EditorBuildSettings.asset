@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 0
-    path: Assets/01.Gunny/Test1.unity
-    guid: f58b6696c6eafc44a8943d254f811713
-  - enabled: 0
-    path: Assets/Scenes/Test.unity
-    guid: ad2bc938cb6add5438641d5158e3314a
+  - enabled: 1
+    path: Assets/09.UI/StartScene.unity
+    guid: dd7a69e54aeb1714fb990121666d6f0f
   - enabled: 1
     path: Assets/03.GiHyeon/ThreeBears.unity
     guid: 60197723cb9a42041aaf67e3d5d1294e
@@ -39,6 +33,9 @@ EditorBuildSettings:
     path: Assets/02.YeonSoo/ReadyMac1.unity
     guid: 60dbf91ea8328b44fbaba8a41af42a95
   - enabled: 1
+    path: Assets/01.Gunny/GunnyStage2.unity
+    guid: c104076b97ae99b4bb45474f3310f37e
+  - enabled: 1
     path: Assets/02.YeonSoo/ReadyMac.unity
     guid: 0183a7c86b9c114429161bb1bd5ebb89
   - enabled: 1
@@ -57,6 +54,6 @@ EditorBuildSettings:
     path: Assets/03.GiHyeon/Whenever.unity
     guid: 6bb2b22e9f542c243b95adc6222c1e83
   - enabled: 1
-    path: Assets/02.YeonSoo/TwoDirectHard.unity
+    path: Assets/02.YeonSoo/LittleStar.unity
     guid: 58a04edbbe34a1d42ba5f6dd0eedc5a1
   m_configObjects: {}

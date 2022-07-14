@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class MapEditor : MonoBehaviour
+public class MapEditor : MonoSingleTon<MapEditor>
 {
+#if UNITY_EDITOR
     public MirrorObstacle mirrorObstacle;
     public PipeObstacle arch;
     public PipeObstacle twoDir;
@@ -13,6 +14,23 @@ public class MapEditor : MonoBehaviour
     public GameObject portL,portR;
 
     public HitObstacle cur;
+
+    public Material unColorMat;
+    public void ColorRemove()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            try
+            {
+            var tr = transform.GetChild(i);
+            tr.GetComponent<Renderer>().material = unColorMat;
+            }
+            catch
+            {
+                continue;
+            }
+        }
+    }
     public void InstantiateMirror()
     {
         var instance = (HitObstacle)PrefabUtility.InstantiatePrefab(mirrorObstacle,transform);
@@ -58,9 +76,10 @@ public class MapEditor : MonoBehaviour
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
+
         Selection.activeObject = cur;
     }
-
+#endif
     //public GameObject childer;
     //[ContextMenu("asdds")]
     //public void sefdfgsasgf()
