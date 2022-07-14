@@ -34,11 +34,13 @@ public class MapEditor : MonoBehaviour
         var instanceL = (GameObject)PrefabUtility.InstantiatePrefab(portL, transform);
         instanceL.transform.position = cur.transform.position;
         ((RingObstacle)cur).leftOut = instanceL.transform.Find("Point");
+        instanceL.GetComponentInChildren<PortalLine>().target = cur.transform;
 
 
         var instanceR = (GameObject)PrefabUtility.InstantiatePrefab(portR, transform);
         instanceR.transform.position = cur.transform.position;
         ((RingObstacle)cur).rightOut = instanceR.transform.Find("Point");
+        instanceR.GetComponentInChildren<PortalLine>().target = cur.transform;
     }
 
     public void InstanatiateTwoDir()
