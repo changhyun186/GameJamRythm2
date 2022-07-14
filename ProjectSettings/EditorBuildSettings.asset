@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/04.ChangHyunMaps/Level4.unity
     guid: 5987111687ae07a48b37d8c4706bba16
   - enabled: 1
+    path: Assets/02.YeonSoo/ReadyMac3.unity
+    guid: 307aaec2daa9ee7408983554f07e937c
+  - enabled: 1
     path: Assets/02.YeonSoo/ReadyMac2.unity
     guid: abbe7777567fe3447915844b56c8cc4b
   - enabled: 1
@@ -50,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02.YeonSoo/Arirang.unity
     guid: e4b5999e1acb3044ab99a49a5bfdc43f
+  - enabled: 1
+    path: Assets/03.GiHyeon/Whenever.unity
+    guid: 6bb2b22e9f542c243b95adc6222c1e83
+  - enabled: 1
+    path: Assets/02.YeonSoo/TwoDirectHard.unity
+    guid: 58a04edbbe34a1d42ba5f6dd0eedc5a1
   m_configObjects: {}
