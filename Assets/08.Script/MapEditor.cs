@@ -23,7 +23,7 @@ public class MapEditor : MonoSingleTon<MapEditor>
             try
             {
             var tr = transform.GetChild(i);
-                if (tr.gameObject.tag == "Star") continue;
+                if (!tr.gameObject.name.Contains("Mirror")) continue;
             tr.GetComponent<Renderer>().material = unColorMat;
             }
             catch
