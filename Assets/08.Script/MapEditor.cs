@@ -5,6 +5,7 @@ using UnityEditor;
 
 public class MapEditor : MonoBehaviour
 {
+#if UNITY_EDITOR
     public MirrorObstacle mirrorObstacle;
     public PipeObstacle arch;
     public PipeObstacle twoDir;
@@ -58,9 +59,10 @@ public class MapEditor : MonoBehaviour
         instance.transform.position = cur.transform.position;
         cur.nextObstacle = instance;
         cur = instance;
+
         Selection.activeObject = cur;
     }
-
+#endif
     //public GameObject childer;
     //[ContextMenu("asdds")]
     //public void sefdfgsasgf()
