@@ -15,7 +15,7 @@ public class StageController : MonoBehaviour
 
     private void Start()
     {
-        Invoke(nameof(SetUsable), 3);
+        Invoke(nameof(SetUsable), 4);
     }
 
     public bool isUsable;
