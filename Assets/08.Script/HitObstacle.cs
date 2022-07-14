@@ -31,18 +31,27 @@ public abstract class HitObstacle : MonoBehaviour
         if (isCur)
         {
             GameManager.Instance.curHitObstacle = this;
-            GetComponentInChildren<Renderer>().material.color = Color.white;
-            if(nextObstacle!=null)
-            nextObstacle.GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0.3f);
+            SetAlpha(1);
+            if (nextObstacle != null)
+            {
+                nextObstacle.SetAlpha(0.3f);
+
+            }
 
         }
         else
         {
-            GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0f);
+           SetAlpha(0);
         }
 
     }
-
+    void SetAlpha(float i)
+    {
+        var mat = GetComponentInChildren<Renderer>().material;
+        var color = mat.color;
+        color.a = i;
+        mat.color = color;
+    }
     public virtual void Break()
     {
         tileAudio?.Play();
