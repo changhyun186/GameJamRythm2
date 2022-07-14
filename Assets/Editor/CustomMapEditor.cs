@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(HitObstacle), true), CanEditMultipleObjects]
 public class CustomMapEditor : Editor
 {
@@ -68,3 +68,4 @@ public class CustomMapEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 }
+#endif

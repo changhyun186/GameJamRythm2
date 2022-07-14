@@ -42,7 +42,8 @@ public class GameManager : MonoSingleTon<GameManager>
             {
                 Destroy(countText.gameObject);
                 player.isStart = true;
-                music?.Play();
+                if(music!=null)
+                music.Play();
             }
             else
                 countText.text = CountAmount.ToString();
@@ -96,19 +97,26 @@ public class GameManager : MonoSingleTon<GameManager>
     }
     IEnumerator CheckRightDirectionCor(HitObstacle hitObstacle)
     {
-        if (hitObstacle.nextObstacle != null)
+        //yield return new WaitForSeconds(0.5f);
+        while(true)
         {
-            var hitPos = hitObstacle.transform.position;
-            float distanceA = Vector3.Distance(player.transform.position, hitPos);
-            yield return new WaitForSeconds(0.3f);
-            float distanceB = Vector3.Distance(player.transform.position, hitPos);
-            if (distanceB > distanceA)
+            if (hitObstacle.nextObstacle != null)
             {
-                Die();
-                print("die");
+                var hitPos = hitObstacle.transform.position;
+                float distanceA = Vector3.Distance(player.transform.position, hitPos);
+                yield return new WaitForSeconds(0.3f);
+                float distanceB = Vector3.Distance(player.transform.position, hitPos);
+                if (distanceB > distanceA)
+                {
+                    Die();
+                    print("die");
+                }
+                print(distanceB + " " + distanceA);
             }
-            print(distanceB + " " + distanceA);
+
+            yield return new WaitForSeconds(1f);
         }
+
 
     }
 
@@ -136,6 +144,7 @@ public class GameManager : MonoSingleTon<GameManager>
         var particle = Instantiate(deathParticle, player.transform.position, Quaternion.identity);
         Destroy(player.gameObject);
         Invoke(nameof(LoadCurScene), 2);
+        music.Stop();
     }
 
     void LoadCurScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
