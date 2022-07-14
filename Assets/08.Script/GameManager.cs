@@ -177,7 +177,7 @@ public class GameManager : MonoSingleTon<GameManager>
     public void HardMode()
     {
         toggle.isOn = PlayerPrefs.GetInt("Hard", 0) == 1?true:false;
-        isHard = !toggle.isOn;
+        isHard = toggle.isOn;
     }
     public void SetHardMode(bool isOn)
     {
